@@ -1,0 +1,4 @@
+tesseract-ocr
+tesseract-ocr-ori
+poppler-utils
+poppler-data
