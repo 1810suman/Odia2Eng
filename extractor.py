@@ -10,7 +10,7 @@ import os
 
 # === Configure these ===
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
-poppler_path = r"C:\poppler-25.07.0\Library\bin"
+poppler_path = '/usr/bin'
 
 # ---------------------------------------------------------------------
 # Helper class: transliteration + extraction + safe-translation
@@ -336,6 +336,7 @@ def extract_ror_info(pdf_path, poppler_path=None):
 # Example run (change paths before running)
 # ---------------------------------------------------------------------
 if __name__ == "__main__":
-    pdf_path = r"C:\Users\suman\Downloads\RoR.pdf"   # <-- change to your file
-    poppler_path = r"C:\poppler-25.07.0\Library\bin" # <-- change to your poppler path or None
+    pdf_path = r"File_name"   # <-- change to your file
+    poppler_path = r"\usr\bin" # <-- change to your poppler path or None
     print(extract_ror_info(pdf_path, poppler_path=poppler_path))
+
